@@ -13,7 +13,7 @@ fi
 export LIBUV_VERSION=0.10.19
 
 if [ ! -d "$SCRIPT_PATH/libuv-v$LIBUV_VERSION" ] ; then
-    wget --continue http://libuv.org/dist/v0.10.19/libuv-v$LIBUV_VERSION.tar.gz
+    curl http://libuv.org/dist/v0.10.19/libuv-v$LIBUV_VERSION.tar.gz > libuv-v$LIBUV_VERSION.tar.gz
     tar xf libuv-v$LIBUV_VERSION.tar.gz
     cd libuv-v$LIBUV_VERSION
     make libuv.a
