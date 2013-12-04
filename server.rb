@@ -2,7 +2,7 @@ port = ENV['PORT'] || 8080
 port = port.to_i
 
 tcp = UV::TCP.new
-tcp.bind UV::ip4_addr '127.0.0.1', port
+tcp.bind UV::ip4_addr '0.0.0.0', port
 
 parser = HTTP::Parser.new
 
