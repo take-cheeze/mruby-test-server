@@ -13,6 +13,7 @@ print "using port: #{port}\n"
 
 tcp.listen(5) do |x|
   return if x != 0
+  print "tcp request started\n"
 
   connection = tcp.accept
   connection_list << connection
