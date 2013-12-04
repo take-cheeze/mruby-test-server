@@ -1,6 +1,8 @@
 MRuby::Build.new do |conf|
   toolchain :gcc
 
+  enable_debug
+
   conf.gembox 'default'
 
   conf.gem :github => 'iij/mruby-env'
