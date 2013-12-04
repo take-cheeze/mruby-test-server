@@ -9,6 +9,7 @@ parser = HTTP::Parser.new
 connection_list = []
 
 print "starting server\n"
+print "using port: #{port}\n"
 
 tcp.listen(5) do |x|
   return if x != 0
